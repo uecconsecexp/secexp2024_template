@@ -71,11 +71,11 @@ import (
 package contentssecurity
 
 import (
-    "encoding/csv" // <- 追加
-    "fmt"
-    "os"      // <- 追加
+	"encoding/csv" // <- 追加
+	"fmt"
+	"os" // <- 追加
 
-    conn "github.com/uecconsecexp/secexp2022/se_go/connector"
+	conn "github.com/uecconsecexp/secexp2022/se_go/connector"
 )
 ```
 
@@ -87,8 +87,8 @@ import (
 ```go:lib.go
 func CsvFile2Table(filename string) ([][]float64, error) {
 	// ...
-    // [][]float64型変数tableに読み込んだ結果を入れる
-    // 最後までたどり着ければエラーはなかったものとしてnil (C言語で言うNULL) を返す
+	// [][]float64型変数tableに読み込んだ結果を入れる
+	// 最後までたどり着ければエラーはなかったものとしてnil (C言語で言うNULL) を返す
 
 	return table, nil
 }
@@ -107,7 +107,7 @@ Go言語では多値返却という方法でエラーを返すのがマナーで
 
 ```go:kadai1/main.go
 func main() {
-    // ...
+	// ...
 	table, err := consec.CsvFile2Table("omomi.txt")
 	if err != nil {
 		panic(err)
@@ -128,7 +128,7 @@ func CsvFile2Table(filename string) ([][]float64, error) {
 	}
 	defer file.Close()
 
-    // ...
+	// ...
 }
 ```
 
@@ -153,7 +153,7 @@ func CsvFile2Table(filename string) ([][]float64, error) {
 		return nil, err
 	}
 
-    // ...
+	// ...
 }
 ```
 
@@ -170,9 +170,9 @@ func CsvFile2Table(filename string) ([][]float64, error) {
 func CsvFile2Table(filename string) ([][]float64, error) {
 	// ここまでで、ファイルの内容をstr_table変数に読み込んだ
 
-    table := make([][]float64, len(str_table)-1)
+	table := make([][]float64, len(str_table)-1)
 
-    // ...
+	// ...
 }
 ```
 
@@ -190,16 +190,16 @@ Go言語のfor文では、`range`を使うことでインデックスと値を�
 func CsvFile2Table(filename string) ([][]float64, error) {
 	// ここまでで、ファイルの内容をstr_table変数に読み込んだ
 
-    table := make([][]float64, len(str_table)-1)
+	table := make([][]float64, len(str_table)-1)
 	for i, row := range str_table[1:] { // <- 1行目はヘッダーなので飛ばすため、[1:]というスライス
-        // rowには一行分の[]stringが入っている
+		// rowには一行分の[]stringが入っている
 		table[i] = make([]float64, len(row)-1) // 各行に、動的配列を入れる
 		for j, cell := range row[1:] { // <- 1列目は行名なので飛ばすため、[1:]というスライス
 			// ここでtable[i][j]にfloat64の値を入れたい
 		}
 	}
 
-    // ...
+	// ...
 }
 ```
 
@@ -215,16 +215,16 @@ func CsvFile2Table(filename string) ([][]float64, error) {
 	for i, row := range str_table[1:] {
 		table[i] = make([]float64, len(row)-1)
 		for j, cell := range row[1:] {
-            // strconv.ParseFloatでパース
+			// strconv.ParseFloatでパース
 			table[i][j], err = strconv.ParseFloat(cell, 64)
-            // エラーハンドリング
+			// エラーハンドリング
 			if err != nil {
 				return nil, err
 			}
 		}
 	}
 
-    // ...
+	// ...
 }
 ```
 
@@ -234,7 +234,7 @@ func CsvFile2Table(filename string) ([][]float64, error) {
 func CsvFile2Table(filename string) ([][]float64, error) {
 	// 省略
 
-    return table, nil
+	return table, nil
 }
 ```
 
