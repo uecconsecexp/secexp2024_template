@@ -1,3 +1,5 @@
+# CSVファイルの内容を[][]float64型配列に格納するハンズオン
+
 省略を交えつつハンズオン形式でソースコードを書いていきます。Go言語自体の一般的な話も交えていきます。
 
 まずは `import` 文でパッケージを追加します。
@@ -19,7 +21,7 @@ import (
 
 - [Exported names](https://go-tour-jp.appspot.com/basics/3)
 
-```go:lib.go(CsvFile2Table全体図)
+```go:lib.go
 func CsvFile2Table(filename string) ([][]float64, error) {
 	// ...
 	// [][]float64型変数tableに読み込んだ結果を入れる
