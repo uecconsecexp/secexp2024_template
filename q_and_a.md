@@ -1,4 +1,4 @@
-[README.md](README.md) > q_and_a.md
+[README.md](README.md) > よくあるQ&A
 
 文責: 2023年度TA 修士2年 奥山
 
@@ -125,10 +125,10 @@ import (
 
 直接聞くのが難しい時は
 
-csec_exp(西暦)@oslab.inf.uec.ac.jp
+csec_exp(西暦) あっとまーく oslab.inf.uec.ac.jp
 
 にメールで聞いてください。開講期間中時間があれば回答いたします。
 
-(2023年度なら csec_exp2023@oslab.inf.uec.ac.jp )
+(2023年度なら csec_exp2023 あっとまーく oslab.inf.uec.ac.jp )
 
 もしメールで聞く場合はなるべくソースコードを記載または添付してください。文章だけで尋ねられても答えかねる場合が多いです。

@@ -1,4 +1,4 @@
-[README.md](README.md) > [q_and_a.md](q_and_a.md) > read_csv.md
+[README.md](README.md) > [よくあるQ&A](q_and_a.md) > CSVファイル読み込みハンズオン
 
 文責: 2023年度TA 修士2年 奥山
 
@@ -98,7 +98,7 @@ func CsvFile2Table(filename string) ([][]float64, error) {
 }
 ```
 
-`err` が `nil` ではない場合(例えば`no such file or directory`等)、エラーを返しています。
+`err` が `nil` ではない場合、エラーを返しています。
 [`reader.ReadAll` メソッド](https://pkg.go.dev/encoding/csv#Reader.ReadAll)のページ曰くこの関数は `[][]string` を返すので、`str_table` には文字列型の2次元配列が格納されています。ヘッダー(行頭 `[成績行列 国 数 英 理 社 内]` や行名 `生徒1` )が含まれてしまっていますので以降はそれを考慮しながら処理を書きます。
 
 `str_table` を `[][]float64` の配列にしていきます。まずは、必要な大きさの動的配列を確保します。動的配列は `make` 関数を用いることで作成できます。
