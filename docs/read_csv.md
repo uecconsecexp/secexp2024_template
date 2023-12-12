@@ -1,4 +1,4 @@
-[README.md](README.md) > [よくあるQ&A](q_and_a.md) > CSVファイル読み込みハンズオン
+[README.md](../README.md) > [よくあるQ&A](q_and_a.md) > CSVファイル読み込みハンズオン
 
 文責: 2023年度TA 修士2年 奥山
 
@@ -44,7 +44,7 @@ Go言語では多値返却という方法でエラーを返すのがマナーで
 
 一方エラーが生じた時はそのエラーを `err` 変数に入れ、 `return nil, err` としてエラーを返します。
 
-こうすると、`csvFile2Table` 関数を次のように呼び出したときにエラーかどうかわかるようになります。
+こうすると、`CsvFile2Table` 関数を次のように呼び出したときにエラーかどうかわかるようになります。
 
 ```go:kadai1/main.go
 func main() {
