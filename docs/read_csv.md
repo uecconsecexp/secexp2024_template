@@ -1,4 +1,4 @@
-[README.md](README.md) > [よくあるQ&A](q_and_a.md) > CSVファイル読み込みハンズオン
+[README.md](../README.md) > [よくあるQ&A](q_and_a.md) > CSVファイル読み込みハンズオン
 
 文責: 2023年度TA 修士2年 奥山
 

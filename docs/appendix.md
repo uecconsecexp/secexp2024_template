@@ -1,4 +1,4 @@
-[README.md](README.md) > APPENDIX
+[README.md](../README.md) > APPENDIX
 
 文責: 2023年度TA 修士2年 奥山
 
