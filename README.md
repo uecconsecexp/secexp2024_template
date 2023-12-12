@@ -8,8 +8,9 @@ README.md
 
 ```
 .
+├── docs/
 ├── README.md
-└── contentssecurity
+└── contentssecurity/
     ├── go.mod
     ├── go.sum
     ├── kadai1
