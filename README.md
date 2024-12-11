@@ -108,16 +108,16 @@ go version go1.13.8 linux/amd64
 $ cd ~
 $ ls go
 ls: cannot access 'go': No such file or directory
-$ wget https://go.dev/dl/go1.21.4.linux-amd64.tar.gz
-$ tar -xzf go1.21.4.linux-amd64.tar.gz
-$ rm go1.21.4.linux-amd64.tar.gz
+$ wget https://go.dev/dl/go1.23.4.linux-amd64.tar.gz
+$ tar -xzf go1.23.4.linux-amd64.tar.gz
+$ rm go1.23.4.linux-amd64.tar.gz
 ```
 
-バージョンを確認して`1.21.4`と表示されることを確認してください。
+バージョンを確認して`1.23.4`と表示されることを確認してください。
 
 ```bash
 $ go version
-go version go1.21.4 linux/amd64
+go version go1.23.4 linux/amd64
 ```
 
 ### goのコマンド
