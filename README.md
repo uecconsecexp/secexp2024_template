@@ -168,7 +168,7 @@ go version go1.23.4 linux/amd64
 本テンプレートはGitHubにて公開されているため、次のコマンドで取得できます。プロジェクトを置きたいディレクトリに移り、次を実行します。
 
 ```
-$ git clone https://github.com/uecconsecexp/secexp2023_template.git
+$ git clone https://github.com/uecconsecexp/secexp2024_template.git
 ```
 
 そのままでも支障はありませんが、テンプレートディレクトリの名前は`mv`コマンドでわかりやすいものに変えましょう。
